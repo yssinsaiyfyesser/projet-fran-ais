@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>La discrimination:</title>
+</head>
+<body>
+    <div class="container">
+        <div class="con">
+            <h1>La discrimination:</h1>
+            <div class="con2">
+                <p>La discrimination, sous toutes ses formes, est une manifestation déplorable d'injustice qui persiste dans de nombreuses sphères de la vie quotidienne. Elle se traduit par un traitement inéquitable fondé sur des caractéristiques telles que la race, le genre, la religion, l'orientation sexuelle, l'origine ethnique ou d'autres différences perçues. La discrimination peut se manifester de manière flagrante à travers des actes discriminatoires explicites, mais elle peut également être insidieuse, se cachant dans des pratiques institutionnelles qui maintiennent des inégalités structurelles. En plus de causer des préjudices individuels, la discrimination affaiblit le tissu social en créant des divisions et en entravant le potentiel de groupes entiers. La lutte contre la discrimination nécessite une vigilance constante, des changements de mentalité et des réformes politiques et sociales. Promouvoir l'éducation et la sensibilisation, tout en encourageant une culture de respect et de tolérance, est essentiel pour éradiquer ces attitudes préjudiciables. En travaillant collectivement à éliminer la discrimination, nous contribuons à la construction d'une société plus équitable et inclusive, où chacun peut être pleinement reconnu et valorisé, indépendamment de ses différences.</p>
+                <img src="dis.png" width="200px">
+            </div>
+            <button id="btn">retour</button>
+            <button id="btn1">audio</button>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById("btn");
+        const btn2 = document.getElementById("btn1");
+        btn.addEventListener("click",function(){
+            window.location.href = "index.html" ;
+        })
+        let snd = new Audio("LA_DISCRIMINATION.mp3");
+        btn2.addEventListener("click", function(){
+            snd.play();
+        })
+    </script>
+</body>
+</html>

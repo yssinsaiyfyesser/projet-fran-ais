@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>projet de français</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="con">
+                <h2>Projet de:</h2>
+                <ul>
+                    <li>saif eddine abd elwahed</li>
+                    <li>yassin abd essmad</li>
+                    <li>yesser arbi</li>
+                    <li>moro</li>
+                </ul>
+                <h1>Toi mon semblable</h1>
+                <p>"Toi, Mon Semblable" , une exploration enrichissante qui nous invite à plonger dans la compréhension de nos semblables, de leurs expériences et de leurs perspectives. Au cours de ce module, nous allons explorer la diversité qui caractérise notre monde, en nous penchant sur ce qui nous unit en tant qu'êtres humains.</p>
+                <button id="btn">Commencer</button>
+                <button id="btn1">audio</button>
+            </div>
+
+        </div>
+        
+        <script>
+          
+          const btn = document.getElementById("btn");
+        const btn2 = document.getElementById("btn1");
+        btn.addEventListener("click",function(){
+            window.location.href = "2.html" ;
+        })
+        let snd = new Audio("INTRODUCTION.mp3");
+        btn2.addEventListener("click", function(){
+            snd.play();
+        }) 
+        </script>
+    </body>
+</html>

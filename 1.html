@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>l'intolérance:</title>
+</head>
+<body>
+    <div class="container">
+        <div class="con">
+            <h1>l'intolérance:</h1>
+            <div class="con2">
+                <p>L'intolérance est une attitude préjudiciable qui se manifeste par le refus de reconnaître, d'accepter ou de respecter les opinions, les croyances ou les caractéristiques différentes de celles de soi-même. Elle est souvent alimentée par la méconnaissance, la peur de l'inconnu ou des préjugés profondément enracinés. L'intolérance peut se manifester à différents niveaux, que ce soit sur le plan culturel, religieux, social ou politique. Elle entrave le dialogue constructif et la coexistence pacifique entre les individus et les communautés. Pour construire une société plus harmonieuse et inclusive, il est essentiel de promouvoir l'éducation, la compréhension mutuelle et le respect des différences. En reconnaissant la diversité comme une richesse plutôt qu'une menace, nous pouvons favoriser un environnement où la tolérance prévaut, permettant à chacun de s'épanouir dans sa singularité.</p>
+                <img src="tolerance.png" width="200px">
+            </div>
+            <button id="btn">Continuer</button>
+            <button id="btn1">audio</button>
+        </div>
+    </div>
+    <script>
+        const btn = document.getElementById("btn");
+        const btn2 = document.getElementById("btn1");
+        btn.addEventListener("click",function(){
+            window.location.href = "2.html" ;
+        })
+        let snd = new Audio("LINTOLERENCE.mp3");
+        btn2.addEventListener("click", function(){
+            snd.play();
+        })
+    </script>
+</body>
+</html>
